@@ -1,98 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
 /* fuente google */
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* aplicar color al navbar*/
-.colorbar{
-    background-color:   #a57ae8;
+.colorbar {
+  background-color: #a57ae8;
 }
+
 /* cambio titulo navbar-brand*/
-.navbar-brand{
-    text-shadow: 0 0 5px black;
-    font-weight: bold;
+.navbar-brand {
+  text-shadow: 0 0 5px black;
+  font-weight: bold;
 }
-.navbar-brand::before{
-    content: url(../multimedia/logoc.png);
-    padding-right: 10px;
+
+.navbar-brand::before {
+  content: url(../multimedia/logoc.png);
+  padding-right: 10px;
 }
+
 /*cambio de color del menu en hover*/
-.nav-link{
-    color: rgb(209, 216, 219) !important;
-    text-shadow: 0 0 5px black;
+.nav-link {
+  color: rgb(209, 216, 219) !important;
+  text-shadow: 0 0 5px black;
 }
+
 /* uso de jumbotron*/
-.jumbotron{
-    background-image: url(../multimedia/night.jpg);
-    background-size: cover;
-    color: aquamarine;
-    border-radius: 0;
-    margin: 0;
+.jumbotron {
+  background-image: url(../multimedia/night.jpg);
+  background-size: cover;
+  color: aquamarine;
+  border-radius: 0;
+  margin: 0;
 }
+
 /* alineacion de titulo h2*/
-h2{
-    text-align: center;
-    text-shadow: 2px 4px 2px white;
-    font-weight: bold;
-    color: rgb(10, 10, 10);
-    padding: 20px;
-    background-color: rgba(128, 128, 128, 0.553);
-    margin: 0;
+h2 {
+  text-align: center;
+  text-shadow: 2px 4px 2px white;
+  font-weight: bold;
+  color: black;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.592);
+  margin: 0;
 }
-main{
-    background-image: url(../multimedia/fondoc.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+main {
+  background-image: url(../multimedia/fondoc.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 /* cambios para parrafos*/
-.textonosotros{
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    padding: 30px 50px;
+.textonosotros {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding: 30px 50px;
 }
+
 /* cambios para productos*/
-.servicios{
-    height: auto;
-    background-color: rgba(128, 128, 128, 0.592);
-    padding: 20px 20px;
-    margin: 20px;
+.servicios {
+  height: auto;
+  background-color: rgba(128, 128, 128, 0.592);
+  padding: 20px 20px;
+  margin: 20px;
 }
+
 /* footer formatos*/
-footer{
-    background-color: rgb(216, 213, 213);
-    font-family: 'Mochiy Pop One', sans-serif;
-    padding: 10px;
-    /* position: fixed;*/
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
+footer {
+  background-color: rgb(216, 213, 213);
+  font-family: "Mochiy Pop One", sans-serif;
+  padding: 10px;
+  /* position: fixed;*/
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 /*Alineacion y tamaño de imagenes footer*/
-footer img{
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    margin: 0 auto;
-    padding: 10px 10px;
+footer img {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  margin: 0 auto;
+  padding: 10px 10px;
 }
+
 /* formato formulario*/
 form {
-    width: 90%;
-    margin:50px auto;  
-    color:rgb(6, 6, 6);
-    text-shadow: rgb(252, 248, 248) 2px 2px 4px;
-    font-style: normal;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: rgba(201, 197, 197, 0.466);
-}
+  width: 90%;
+  margin: 50px auto;
+  color: black;
+  text-shadow: rgb(252, 248, 248) 2px 2px 4px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(201, 197, 197, 0.466);
+}/*# sourceMappingURL=estilos.css.map */

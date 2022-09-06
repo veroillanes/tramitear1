@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* fuente google */
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+/*Reseteo de inicio*/
 * {
   margin: 0;
   padding: 0;
@@ -86,9 +87,8 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
+  /*Alineacion y tamaño de imagenes footer*/
 }
-
-/*Alineacion y tamaño de imagenes footer*/
 footer img {
   width: 50px;
   height: 50px;

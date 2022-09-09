@@ -1,0 +1,18 @@
+/* aplicar color al navbar*/
+.colorbar{
+    background-color:   #a57ae8;
+}
+/* cambio titulo navbar-brand*/
+.navbar-brand{
+    text-shadow: 0 0 5px $color2;
+    font-weight: bold;
+}
+.navbar-brand::before{
+    content: url(../multimedia/logoc.png);
+    padding-right: 10px;
+}
+/*cambio de color del menu en hover*/
+.nav-link{
+    color: rgb(209, 216, 219) !important;
+    text-shadow: 0 0 5px $color2;
+}

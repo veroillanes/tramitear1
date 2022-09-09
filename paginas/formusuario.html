@@ -1,94 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="¿Quien me hace el trámite? Tramitear es la respuesta, no mas estres">
+    <meta name="description" content="Confia en Tramitear es la respuesta">
     <mena name="keywords" content="tramites, turnos, subsidio, impresion de facturas, luz, gas, agua">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
-    <title>Datos de contacto</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <title>Datos de contacto</title>
 </head>
+
 <body>
     <!-- inicio de header -->
     <header>
-    <!-- inicio de navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark colorbar">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">Tramitear</a>
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Formulario Usuario</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../paginas/formprofesional.html">Formulario Profesional</a>
-                </li>
-            </ul>
-        </div>
-    </nav> 
+        <!-- inicio de navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark colorbar">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">Tramitear</a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="">
+                <ul class="navbar-nav d-flex justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Formulario Usuario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../paginas/formprofesional.html">Formulario Profesional</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <!-- fin navbar -->
     <!-- inicio del completado del formulario -->
-    <h2>Datos de Contacto Usuarios</h2>  
-    <h3 class="complete">Complete el siguiente formulario:</h3>
-    <form action="enviar.php" method="post" enctype="text/plain"  netlify>
-        <label for="nombre">Apellido y Nombre:</label>
-        <input type="text" name="nombre"><br><br>
-        <label for="telefono">Número de Celular:</label>
-        <input type="number" name="telefono" required placeholder="Escribe tu celular aqui"><br><br>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" name="correo"><br><br>
-        <label for="fecnac">Fecha de Nacimiento:</label>
-        <input type="date" name="fecnac"><br><br>
-        <!-- ingreso de botones radio -->
-        Masculino <input type="radio" name="sexo" value="hombre">
-        Femenino <input type="radio" name="sexo" value="Mujer"><br><br>
-        <label for="pass">Contraseña:</label>
-        <input type="password" name="pass"><br><br>
-        <label for="file">Adjuntar archivos:</label>
-        <input type="file" name="file"><br><br>
-        <label for="comentarios">Comentarios:</label><br><br>
-        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
-        <br>
-        <input type="submit" value="Enviar formulario">
-        <input type="Reset"><br><br>
+    <h2>Datos de Contacto Usuarios</h2>
+    <h3 class="complete text-center mt-5">Complete el siguiente formulario</h3>
+    <form class="row g-3 mx-auto p-3">
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Escribe aquí...">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Apellido y Nombre</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Escribe aquí...">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress2" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Escribe aquí...">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label">Localidad</label>
+            <input type="text" class="form-control" id="inputCity" placeholder="Escribe aquí...">
+        </div>
+        <div class="col-md-4">
+            <label for="inputState" class="form-label">Provincia </label>
+            <select id="inputState" class="form-select">
+                <option selected>Selecciona...</option>
+                <option>Buenos Aires</option>
+                <option>Santiago del Estero</option>
+                <option>Mendoza</option>
+                <option>Cordoba</option>
+                <option>Santa Fe</option>
+            </select>
+        </div>
+        <div class="col-md-2">
+            <label for="inputZip" class="form-label">Codigo Postal</label>
+            <input type="text" class="form-control" id="inputZip">
+        </div>
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Guardar mis datos
+                </label>
+            </div>
+        </div>
+        <div class="col-12">
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+        </div>
     </form>
     <!-- aplicando footer -->
     <footer>
         <h3>Cualquier inquietud contáctanos por las redes</h3>
         <div>
             <a href="https://www.facebook.com/Coderhouse/" target="_blank">
-            <img src="../multimedia/face.png" alt="Facebook"></a>
+                <img src="../multimedia/face.png" alt="Facebook"></a>
             <a href="https://www.instagram.com/explore/locations/266708087216280/coder/" target="_blank">
-            <img src="../multimedia/instagram.png" alt="instagram"></a>
+                <img src="../multimedia/instagram.png" alt="instagram"></a>
             <a href="https://web.whatsapp.com/" target="_blank">
-            <img src="../multimedia/whatsapp.com.png" alt="Whatsapp"></a>
+                <img src="../multimedia/whatsapp.com.png" alt="Whatsapp"></a>
             <a href="https://web.telegram.org/z/" target="_blank">
-            <img src="../multimedia/telegram.png" alt="Telegram" ></a>
+                <img src="../multimedia/telegram.png" alt="Telegram"></a>
         </div>
+        <p> Diseñado por Veronica Illanes Vargas Ⓡ2022</p>
     </footer>
     <!-- footer finaliza -->
 
     <!-- ingreso de bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
 
 </body>
+
 </html>

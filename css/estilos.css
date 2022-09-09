@@ -1,11 +1,69 @@
 @charset "UTF-8";
 /* fuente google */
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+p {
+  font-size: 1em;
+  line-height: 1.3em;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  background-color: rgba(179, 0, 255, 0.342);
+}
+
 /*Reseteo de inicio*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* uso de jumbotron*/
+.jumbotron {
+  background-image: url(../multimedia/night.jpg);
+  background-size: cover;
+  color: aquamarine;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* alineacion de titulo h2*/
+h2 {
+  text-align: center;
+  text-shadow: 2px 4px 2px white;
+  font-weight: bold;
+  color: black;
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.592);
+  margin: 0;
+}
+
+main {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* cambios para parrafos*/
+.textonosotros {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  padding: 30px 50px;
+}
+
+/* cambios para productos*/
+.servicios {
+  height: auto;
+  background-color: rgba(128, 128, 128, 0.592);
+  padding: 20px 20px;
+  margin: 20px;
 }
 
 /* aplicar color al navbar*/
@@ -30,48 +88,16 @@
   text-shadow: 0 0 5px black;
 }
 
-/* uso de jumbotron*/
-.jumbotron {
-  background-image: url(../multimedia/night.jpg);
-  background-size: cover;
-  color: aquamarine;
-  border-radius: 0;
-  margin: 0;
-}
-
-/* alineacion de titulo h2*/
-h2 {
-  text-align: center;
-  text-shadow: 2px 4px 2px white;
-  font-weight: bold;
+/* formato formulario*/
+form {
+  width: 90%;
+  margin: 50px auto;
   color: black;
-  padding: 20px;
-  background-color: rgba(128, 128, 128, 0.592);
-  margin: 0;
-}
-
-main {
-  background-image: url(../multimedia/fondoc.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* cambios para parrafos*/
-.textonosotros {
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  padding: 30px 50px;
-}
-
-/* cambios para productos*/
-.servicios {
-  height: auto;
-  background-color: rgba(128, 128, 128, 0.592);
-  padding: 20px 20px;
-  margin: 20px;
+  text-shadow: rgb(252, 248, 248) 2px 2px 4px;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(201, 197, 197, 0.466);
 }
 
 /* footer formatos*/
@@ -87,8 +113,9 @@ footer {
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
-  /*Alineacion y tamaño de imagenes footer*/
 }
+
+/*Alineacion y tamaño de imagenes footer*/
 footer img {
   width: 50px;
   height: 50px;
@@ -97,14 +124,14 @@ footer img {
   padding: 10px 10px;
 }
 
-/* formato formulario*/
-form {
-  width: 90%;
-  margin: 50px auto;
-  color: black;
-  text-shadow: rgb(252, 248, 248) 2px 2px 4px;
-  font-style: normal;
+footer img:hover {
+  transform: scale(1.5);
+}
+
+footer h3 {
   font-size: 16px;
-  font-weight: bold;
-  background-color: rgba(201, 197, 197, 0.466);
+}
+
+footer p {
+  font-size: 14px;
 }/*# sourceMappingURL=estilos.css.map */

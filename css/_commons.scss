@@ -1,0 +1,45 @@
+/*Reseteo de inicio*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* uso de jumbotron*/
+.jumbotron{
+    background-image: url(../multimedia/night.jpg);
+    background-size: cover;
+    color: aquamarine;
+    border-radius: 0;
+    margin: 0;
+}
+/* alineacion de titulo h2*/
+h2{
+    text-align: center;
+    text-shadow: 2px 4px 2px white;
+    font-weight: bold;
+    color: $color2;
+    padding: 20px;
+    background-color: $color1;
+    margin: 0;
+}
+main{
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* cambios para parrafos*/
+.textonosotros{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 30px 50px;
+}
+/* cambios para productos*/
+.servicios{
+    height: auto;
+    background-color: $color1;
+    padding: 20px 20px;
+    margin: 20px;
+}

@@ -2,17 +2,20 @@
 .colorbar{
     background-color:   #a57ae8;
 }
-/* cambio titulo navbar-brand*/
-.navbar-brand{
-    text-shadow: 0 0 5px $color2;
-    font-weight: bold;
-}
+
 .navbar-brand::before{
-    content: url(../multimedia/logoc.png);
+    content: url(../multimedia/logo.webp);
     padding-right: 10px;
 }
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-size: 22px;
+    text-shadow: 0 0 7px black ;
+}
+
 /*cambio de color del menu en hover*/
-.nav-link{
-    color: rgb(209, 216, 219) !important;
-    text-shadow: 0 0 5px $color2;
+.navbar-nav .nav-item .nav-link:hover{
+    color: aqua; 
+    font-size: 24px;
 }

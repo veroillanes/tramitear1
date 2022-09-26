@@ -5,11 +5,24 @@
     box-sizing: border-box;
 }
 
-/* uso de jumbotron*/
-.jumbotron{
-    background-image: url(../multimedia/night.jpg);
-    background-size: cover;
-    color: aquamarine;
+/* carousel */
+.sec{
+    width: 75%;
+}
+.sec .carousel-indicators li{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid $color3;
+}
+.carousel-caption h5{
+    color: aqua;
+}
+
+/* formato titulo principal  */
+.tituloprincipal h1{
+    color: aqua;
+    width: 40px;
     border-radius: 0;
     margin: 0;
 }
@@ -24,22 +37,52 @@ h2{
     margin: 0;
 }
 main{
+    background-color: $color3;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 /* cambios para parrafos*/
+.al{
+    background-image: url(../multimedia/pagodeservicios.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+.sombra{
+    box-shadow: 0px 4px 8px 4px hsla(282, 88%, 39%, 0.7);
+}
 .textonosotros{
     font-size: 20px;
     line-height: 24px;
     text-align: center;
     padding: 30px 50px;
+    background-image: url(../multimedia/fondo.webp);
+}
+.ar{
+    text-align: center;
+    color: #a57ae8;
+    margin-top: 10px;
+}
+/*  logo animacion  */
+.anima{
+    text-align: center;
+}
+.anima:hover{
+    -webkit-transform: rotate(360deg);
+    transition: 2s ease-in-out;
+    
+    -webkit-box-shadow: 0px 0px 15px hsla(282, 88%, 39%, 0.7);
 }
 /* cambios para productos*/
 .servicios{
     height: auto;
     background-color: $color1;
     padding: 20px 20px;
-    margin: 20px;
 }
+p{
+    text-align: center;
+    color: $color3;
+}
+

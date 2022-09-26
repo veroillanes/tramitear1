@@ -7,7 +7,9 @@
     <meta name="description" content="Buscanos Tramitear es la mejor respuesta para tus trámites">
     <mena name="keywords" content="tramites, turnos, subsidio, impresion de facturas, luz, gas, agua, edesur, edenor, metrogas, aysa, turnos afip, turnos anses">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../multimedia/favicon.png">
     <title>Nosotros</title>
 </head>
 <body>
@@ -16,7 +18,7 @@
     <!-- inicio de navbar -->
     <nav class="navbar navbar-expand-md navbar-dark colorbar">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Tramitear</a>
+        <a class="navbar-brand" href="../index.html"></a>
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -34,10 +36,10 @@
                     <a class="nav-link" href="./servicios.html">Servicios</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Formulario Usuario</a>
+                    <a class="nav-link" href="./formprofesional.html">Formulario Usuario</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Formulario Profesional</a>
+                    <a class="nav-link" href="./formusuario.html">Formulario Profesional</a>
                 </li>
             </ul>
         </div>
@@ -45,16 +47,28 @@
     </header>
     <!-- fin navbar -->
     <!-- info nosotros -->
-    
-        <h2>NOSOTROS</h2>
-        <p class="textonosotros">
-            Buscamos la mejor manera de darle el mejor servicio
-            Con el mejor staf profesional para ayudarte
-            Nuestro trabajo es quitarte el estres de cualquier trámite
-            Siempre estamos actualizando las distintas opciones
-            Estamos para ayudarte
-        </p>
-        <iframe width="100%" height="450" src="https://www.youtube.com/embed/rKQ1qdD1hrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+    <h2>NOSOTROS</h2>
+    <section class="container.fluid">
+        <div data-aos="fade-down-right" class="row">
+            <aside class="col-md-6 al sombra nosanima"></aside>
+            <aside class="col-md-6 ar">
+                <h3>Quienes somos</h3>
+                <p class="textonosotros">Tramitear es la solución integral más completa de Buenos Aires para realizar sus trámites, no importa que tan únicos o especializados, y resolver problemas de gestión personales o empresariales de manera profesional, rápida y económica.  Proveemos soluciones para individuos y empresas de todos los tamaños.</p>
+            </aside>
+        </div>
+    </section>
+        <p class="textonosotros">Con más de 10 años de experiencia, Tramitear se ha posicionado como una solución importante (y en muchos casos, ¡salvadora!) a la hora de simplificarle la vida, ahorrando al usuario tiempo y dinero. Con nuestra red de Profesionales Asociados a lo largo de toda la provincia, no hay trámite o gestión que no podamos hacer.</p>
+        <p class="textonosotros">A continuación, presentamos una pequeña reseña de nuestros servicios más frecuentes.  Contáctenos si requiere de un servicio especializado.</p>
+    <!-- ingreso video -->
+    <center>
+        <div class="video-contenedor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xS8Uw_aRMUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </center>
+    <!-- logo animacion -->
+    <div class="anima">
+        <img src="../multimedia/logo.png" width="350px" height="350px" alt="Tramitear">
+    </div>
     <!-- aplicando footer -->
     <footer>
         <h3>Cualquier inquietud contáctanos por las redes</h3>
@@ -75,6 +89,10 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

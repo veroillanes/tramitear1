@@ -1,12 +1,12 @@
 @mixin textos($fontsize, $lineheight, $color){
     font-size: $fontsize;
     line-height: $lineheight;
-    color: $color;
+    color: $color4;
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
 }
 
 p{
-    @include textos(1em,1.3em , black)
+    @include textos(1em,1.3em , white)
 }
 
 @mixin flex($justify,$align,$direction){
@@ -18,5 +18,5 @@ p{
 
 main {
     @include flex(center, flex-start, row);
-    background-color: rgba(179, 0, 255, 0.342);
+    background-color: $color3;
 }

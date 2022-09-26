@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /* fuente google */
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap");
+
+/*Reseteo de inicio*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 p {
   font-size: 1em;
   line-height: 1.3em;
@@ -13,36 +21,41 @@ main {
   justify-content: center;
   align-items: flex-start;
   flex-direction: row;
-  background-color: rgba(179, 0, 255, 0.342);
+  background-image: url(../multimedia/fondo.webp); 
 }
 
-/*Reseteo de inicio*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* uso de jumbotron*/
-.jumbotron {
-  background-image: url(../multimedia/night.jpg);
-  background-size: cover;
+/* titulo principal */
+h1{
   color: aquamarine;
+  font-size: 26px;
+  background-color: #850cb9e2;
+  height: 60px;
+  text-align: center;
   border-radius: 0;
   margin: 0;
 }
 
+
 /* alineacion de titulo h2*/
 h2 {
   text-align: center;
-  text-shadow: 2px 4px 2px white;
+  text-shadow: 2px 1px 2px rgb(176, 174, 174);
   font-weight: bold;
-  color: black;
+  color: aqua;
   padding: 20px;
-  background-color: rgba(128, 128, 128, 0.592);
+  background-color: #850cb9e2;
   margin: 0;
 }
-
+.subtitulos{
+  font-size: 34px;
+  text-shadow: 2px 1px 2px aqua;
+}
+.titsub{
+  color: white;
+  font-weight: bold;
+  font-size: 36px;
+  text-shadow: 2px 1px 2px black;
+}
 main {
   background-size: cover;
   display: flex;
@@ -50,20 +63,46 @@ main {
   align-items: center;
 }
 
-/* cambios para parrafos*/
+/* cambios para parrafos nosotros*/
+.al{
+  background-image: url(../multimedia/pagodeservicios.jpg);
+  background-size: cover;
+  background-position: absolute;
+  height: 400px;
+}
+.sombra{
+  box-shadow: 0px 4px 8px 4px hsla(282, 88%, 39%, 0.7);
+}
+.nosanima:hover{
+  filter: grayscale(1);
+  transition: filter 0.3s;
+}
 .textonosotros {
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
-  padding: 30px 50px;
+  text-align: justify;
+  padding: 20px 20px;
 }
-
+.ar{
+  text-align: center;
+  color: #a57ae8;
+  margin-top: 10px;
+}
+/*  logo animacion  */
+.anima{
+  text-align: center;
+}
+.anima:hover{
+  -webkit-transform: rotate(360deg);
+  transition: 2s ease-in-out;
+  -webkit-box-shadow: 0px 0px 15px hsla(282, 88%, 39%, 0.7);
+}
 /* cambios para productos*/
 .servicios {
+  margin-top: 0 !important;  
   height: auto;
-  background-color: rgba(128, 128, 128, 0.592);
+  background-image: url(../multimedia/fondo.webp);
   padding: 20px 20px;
-  margin: 20px;
 }
 
 /* aplicar color al navbar*/
@@ -78,19 +117,25 @@ main {
 }
 
 .navbar-brand::before {
-  content: url(../multimedia/logoc.png);
+  content: url(../multimedia/logo.webp);
   padding-right: 10px;
 }
 
+.navbar-nav .nav-item .nav-link{
+  color: white;
+  font-size: 22px;
+  text-shadow: 0 0 7px black ;
+}
+
 /*cambio de color del menu en hover*/
-.nav-link {
-  color: rgb(209, 216, 219) !important;
-  text-shadow: 0 0 5px black;
+.navbar-nav .nav-item .nav-link:hover{
+  color: aqua; 
+  font-size: 24px;
 }
 
 /* formato formulario*/
 form {
-  width: 90%;
+  width: 78%;
   margin: 50px auto;
   color: black;
   text-shadow: rgb(252, 248, 248) 2px 2px 4px;
@@ -99,11 +144,16 @@ form {
   font-weight: bold;
   background-color: rgba(201, 197, 197, 0.466);
 }
+.formtit{
+  color: aqua;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: black 2px 2px 4px;
+}
 
 /* footer formatos*/
 footer {
-  background-color: rgb(216, 213, 213);
-  font-family: "Mochiy Pop One", sans-serif;
+  background-color: rgb(216, 213, 213);  
   padding: 10px;
   /* position: fixed;*/
   bottom: 0;
@@ -111,8 +161,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 20px;
+  flex-direction: column;  
 }
 
 /*Alineacion y tamaño de imagenes footer*/

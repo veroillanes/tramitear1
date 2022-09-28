@@ -8,26 +8,25 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;  
+    /*Alineacion y tamaño de imagenes footer*/  
+    img{
+        width: 50px;
+        height: 50px;
+        display: inline-flex;
+        margin: 0 auto;
+        padding: 10px 10px;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+    h3{
+        font-size: 16px;
+    }
+    p{
+        font-size: 14px;
+        color: black;
+    }
 }
 
-/*Alineacion y tamaño de imagenes footer*/
-footer img {
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    margin: 0 auto;
-    padding: 10px 10px;
-}
 
-footer img:hover {
-    transform: scale(1.5);
-}
-
-footer h3 {
-    font-size: 16px;
-}
-
-footer p {
-    font-size: 14px;
-}
